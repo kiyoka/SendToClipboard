@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+    <Product Id="A90D5A11-4900-42A1-929C-13D1CB1AFF5F" Name="SendToClpboard" Language="1033" Version="1.0.0" Manufacturer="Kiyoka Nishiyama" UpgradeCode="52304B34-F595-4A1A-884D-C936BB590B85">
+        <Package Description="SendTo Clipboard by right-click operation." Comments="SendTo Clipboard" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder" Name="PFiles">
+                <Directory Id="CleanWesternMountain" Name="CleanWesternMountain">
+                    <Component Id="SendToClipboard.exe" Guid="25CADE29-B2BC-4CA1-9B13-FA2C7D73D244">
+                        <File Id="SENDTOCLIPBOARD.EXE" Name="SendToClipboard.exe" Source="..\SendToClipboard\bin\Release\SendToClipboard.exe" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </Directory>
+        <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+            <ComponentRef Id="SendToClipboard.exe" />
+        </Feature>
+        <UI />
+        <PropertyRef Id="NETFRAMEWORK35" />
+        <Condition Message="This application requires .NET Framework 3.5.">Installed OR NETFRAMEWORK35</Condition>
+    </Product>
+</Wix>
