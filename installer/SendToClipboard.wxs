@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-    <Product Id="A90D5A11-4900-42A1-929C-13D1CB1AFF5F" Name="SendToClpboard" Language="1033" Version="1.0.0" Manufacturer="Kiyoka Nishiyama" UpgradeCode="52304B34-F595-4A1A-884D-C936BB590B85">
+    <Product Id="A90D5A11-4900-42A1-929C-13D1CB1AFF5F" Name="SendToClipboard" Language="1033" Version="1.0.0" Manufacturer="Kiyoka Nishiyama" UpgradeCode="52304B34-F595-4A1A-884D-C936BB590B85">
         <Package Description="SendTo Clipboard by right-click operation." Comments="SendTo Clipboard" InstallerVersion="200" Compressed="yes" />
         <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
         <Directory Id="TARGETDIR" Name="SourceDir">
