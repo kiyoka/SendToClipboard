@@ -18,18 +18,22 @@ namespace SendToClipboard
                     System.Console.WriteLine("SendToClipboard \"string\"");
                     break;
                 default:
-                    SendToClipboard(args[0]);
+                    SendToClipboard(args);
                     break;
             }
             return 0;
         }
 
-        static void SendToClipboard(string filepath)
+        static void SendToClipboard(string[] filePathArray)
         {
-            //System.Console.WriteLine(filepath);
+            string text = "";
+            foreach( string filepath in filePathArray ) {
+                text += filepath + "\n";
+            }
+            //System.Console.WriteLine(text);
             try
             {
-                Clipboard.SetText(filepath);
+                Clipboard.SetText(text);
             }
             catch (ArgumentNullException e)
             {
