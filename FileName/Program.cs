@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace SendToClipboard
+namespace FileNameToClipboard
 {
     class Program
     {
@@ -15,7 +15,7 @@ namespace SendToClipboard
             switch (args.Length)
             {
                 case 0:
-                    System.Console.WriteLine("SendToClipboard \"string\"");
+                    System.Console.WriteLine("FileNameToClipboard \"string1\" \"string2\" ...");
                     break;
                 default:
                     SendToClipboard(args);
@@ -24,12 +24,20 @@ namespace SendToClipboard
             return 0;
         }
 
+        static string[] getFileNames(string[] filePathArray)
+        {
+            List<string> lst = new List<string>();
+            foreach( string filepath in filePathArray ) {
+                lst.Add(System.IO.Path.GetFileName(filepath));
+            }
+            return lst.ToArray();
+        }
+
         static void SendToClipboard(string[] filePathArray)
         {
             string text = "";
-            foreach( string filepath in filePathArray ) {
-                text += filepath + "\n";
-            }
+            text = string.Join("\n", getFileNames(filePathArray));
+      
             //System.Console.WriteLine(text);
             try
             {

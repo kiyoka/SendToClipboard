@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}</ProjectGuid>
+    <ProjectGuid>{109C96E2-5AB5-499E-B950-3D2E74B0457D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SendToClipboard</RootNamespace>
-    <AssemblyName>SendToClipboard</AssemblyName>
+    <RootNamespace>FileNameToClipboard</RootNamespace>
+    <AssemblyName>FileNameToClipboard</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendToClipboard", "SendToClipboard\SendToClipboard.csproj", "{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileName", "FileName\FileName.csproj", "{109C96E2-5AB5-499E-B950-3D2E74B0457D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullPath", "FullPath\FullPath.csproj", "{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{109C96E2-5AB5-499E-B950-3D2E74B0457D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109C96E2-5AB5-499E-B950-3D2E74B0457D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109C96E2-5AB5-499E-B950-3D2E74B0457D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109C96E2-5AB5-499E-B950-3D2E74B0457D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABB7A63-8E07-4DDA-A6D1-E409F086A529}.Release|Any CPU.ActiveCfg = Release|Any CPU

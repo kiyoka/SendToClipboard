@@ -6,8 +6,11 @@
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="ProgramFilesFolder" Name="PFiles">
                 <Directory Id="APPLICATIONROOTDIRECTORY" Name="CleanWesternMountain">
-                    <Component Id="SendToClipboard.exe" Guid="25CADE29-B2BC-4CA1-9B13-FA2C7D73D244">
-                        <File Id="SENDTOCLIPBOARD.EXE" Name="SendToClipboard.exe" Source="..\SendToClipboard\bin\Release\SendToClipboard.exe" />
+                    <Component Id="FullPathToClipboard.exe" Guid="25CADE29-B2BC-4CA1-9B13-FA2C7D73D244">
+                        <File Id="FULLPATHTOCLIPBOARD.EXE" Name="FullPathToClipboard.exe" Source="..\FullPath\bin\Release\FullPathToClipboard.exe" />
+                    </Component>
+                    <Component Id="FileNameToClipboard.exe" Guid="25CADE29-B2BC-4CA1-9B13-FA2C7D73D245">
+                        <File Id="FILENAMETOCLIPBOARD.EXE" Name="FileNameToClipboard.exe" Source="..\FileName\bin\Release\FileNameToClipboard.exe" />
                     </Component>
                 </Directory>
             </Directory>
@@ -16,12 +19,14 @@
         </Directory>
         <DirectoryRef Id="SendToFolder">
             <Component Id="FullPathShortcut" Guid="4CAA0A4D-968B-4F62-A721-AA5C5523FECD">
-                <Shortcut Id="FullPathToClipboard" Name="FullPath To Clipboard" Target="[APPLICATIONROOTDIRECTORY]SendToClipboard.exe" WorkingDirectory="APPLICATIONROOTDIRECTORY" />
+                <Shortcut Id="FullPathToClipboard" Name="FullPath To Clipboard" Target="[APPLICATIONROOTDIRECTORY]FullPathToClipboard.exe" WorkingDirectory="APPLICATIONROOTDIRECTORY" />
+                <Shortcut Id="FileNameToClipboard" Name="FileName To Clipboard" Target="[APPLICATIONROOTDIRECTORY]FileNameToClipboard.exe" WorkingDirectory="APPLICATIONROOTDIRECTORY" />
                 <RegistryValue Root="HKCU" Key="Software\CleanWesternMountain\SendToClipboard" Name="installed" Type="integer" Value="1" KeyPath="yes" />
             </Component>
         </DirectoryRef>
         <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
-            <ComponentRef Id="SendToClipboard.exe" />
+            <ComponentRef Id="FullPathToClipboard.exe" />
+            <ComponentRef Id="FileNameToClipboard.exe" />
             <ComponentRef Id="FullPathShortcut" />
         </Feature>
         <PropertyRef Id="NETFRAMEWORK35" />
