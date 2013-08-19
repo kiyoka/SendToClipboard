@@ -4,6 +4,10 @@ SendToClipboard
 
 SendTo application for Windows.
 
+## Download
+
+[SendToClipboard-1.0.0.msi](https://s3-ap-northeast-1.amazonaws.com/sendtoclipboard/release/SendToClipboard-1.0.0.msi) (240KByte)
+
 ## Support OS
 
 Windows XP/Vista/7/8 (.NET Framework 3.5)
