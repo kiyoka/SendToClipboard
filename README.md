@@ -1,10 +1,11 @@
 SendToClipboard
 =======================
-## Concept
+`Send To' clipboard application for Windows.
 
-SendTo application for Windows.
+Right-click of the file and select menu. (You can choose multiple files)
+  ![How to use](./img/SendToClipboard.png)
 
-## Download
+## Installer
 
 [SendToClipboard-1.0.0.msi](https://s3-ap-northeast-1.amazonaws.com/sendtoclipboard/release/SendToClipboard-1.0.0.msi) (240KByte)
 
