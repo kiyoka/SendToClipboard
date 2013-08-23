@@ -25,8 +25,10 @@ Windows XP/Vista/7/8 (.NET Framework 3.5)
 ## Open Source
 
 This software is distributed under the BSD-style license.
+This project's installer is a pragmatic Windows installer example.
+So, [SendToClipboard.wxs](installer/SendToClipboard.wxs) is the most important file for developers :)
 
 ## Development tool
 
 - Visual Studio 2012 C#
-- WiX toolset v3.7
+- [WiX toolset v3.7](http://wixtoolset.org/)
